@@ -1,0 +1,3 @@
+Frontend has a folder that should be run on Android studio.
+Backend has a file called Server.py that should be run concurrently in command line as python Server.py
+SQL_Table_Cmd.docx has SQL command to create the database which would be used by Server.py

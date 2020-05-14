@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+    <category>
+        <pattern>*</pattern>
+        <template>I have no answer for that.</template>
+    </category>
+    <category>
+        <pattern>HI MY NAME IS *</pattern>
+        <template>Hi <set name = "firstname"><star/></set>, how are you?</template>
+    </category>
+    <category>
+        <pattern>* NAME IS *</pattern>
+        <template>Hi <set name = "firstname"><star index="2"/></set>, how are you?</template>
+    </category>
+    <category>
+        <pattern>I AM *</pattern>
+        <template>Hi <set name = "firstname"><star/></set>, how are you?</template>
+    </category>
+
+
+    <category>
+        <pattern>I AM FINE</pattern>
+        <template>Good to know that.</template>
+    </category>
+
+
+
+
+    <category>
+        <pattern>CAN YOU HELP ME IN CHOOSING THE ELECTIVE COURSE THIS SEMESTER</pattern>
+        <template>Sure. I can do that. Can you let me know the domain you are interested in</template>
+    </category>
+    <category>
+        <pattern>* CHOOSING * ELECTIVES *</pattern>
+        <template><srai>CAN YOU HELP ME IN CHOOSING THE ELECTIVE COURSE THIS SEMESTER</srai></template>
+    </category>
+    <category>
+        <pattern>* CHOOSING * ELECTIVE *</pattern>
+        <template><srai>CAN YOU HELP ME IN CHOOSING THE ELECTIVE COURSE THIS SEMESTER</srai></template>
+    </category>
+    <category>
+        <pattern>* CHOOSING * ELECTIVE</pattern>
+        <template><srai>CAN YOU HELP ME IN CHOOSING THE ELECTIVE COURSE THIS SEMESTER</srai></template>
+    </category>
+    <category>
+        <pattern>* CHOOSING ELECTIVE</pattern>
+        <template><srai>CAN YOU HELP ME IN CHOOSING THE ELECTIVE COURSE THIS SEMESTER</srai></template>
+    </category>
+    <category>
+        <pattern>* CHOOSE * ELECTIVES *</pattern>
+        <template><srai>CAN YOU HELP ME IN CHOOSING THE ELECTIVE COURSE THIS SEMESTER</srai></template>
+    </category>
+    <category>
+        <pattern>* CHOOSE * ELECTIVE *</pattern>
+        <template><srai>CAN YOU HELP ME IN CHOOSING THE ELECTIVE COURSE THIS SEMESTER</srai></template>
+    </category>
+
+
+
+    <category>
+        <pattern>I AM INTERESTED IN * </pattern>
+        <template>Can you let me know the name of the faculty you like?
+        <think><set name = "domain_list"><star/></set></think> </template>
+    </category>
+    <category>
+        <pattern>* INTERESTED IN * </pattern>
+        <template>Can you let me know the name of the faculty you like?
+        <think><set name = "domain_list"><star index="2"/></set></think> </template>
+    </category>
+    <category>
+        <pattern>I LIKE * </pattern>
+        <template>Can you let me know the name of the faculty you like?
+        <think><set name = "domain_list"><star index="1"/></set></think> </template>
+    </category>
+   
+   
+   
+   
+    <category>
+        <pattern>I LIKE FACULTIES *</pattern>
+        <template>I can recommend you a few courses based on this.
+        <think><set name = "faculty_list"><star/></set></think></template>
+    </category>
+    <category>
+        <pattern>I LIKE STUDYING UNDER * FACULTIES</pattern>
+        <template>I can recommend you a few courses based on this.
+        <think><set name = "faculty_list"><star/></set></think></template>
+    </category>
+    <category>
+        <pattern>* BASED ON * FACULTIES</pattern>
+        <template>I can recommend you a few courses based on this.
+        <think><set name = "faculty_list"><star index="2"/></set></think></template>
+    </category>
+</aiml>
+
